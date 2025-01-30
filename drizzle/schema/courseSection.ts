@@ -2,7 +2,7 @@ import { integer, pgEnum, pgTable, text, uuid } from "drizzle-orm/pg-core";
 import { createdAt, id, updatedAt } from "../schemaHelper";
 import { CourseTable } from "./course";
 import { relations } from "drizzle-orm";
-import { lessonTable } from "./lession";
+import { lessonTable } from "./lesson";
 
 export const courseSectionStatuses = ["public", "private"] as const;
 export type courseSectionStatus = (typeof courseSectionStatuses)[number];
